@@ -1,0 +1,71 @@
+.top {
+    &__image {
+        grid-row: 1/2;
+        grid-column: left-border-start/ right-border-end;
+        background-color: transparent;
+        background-image: linear-gradient( to right,
+                                            rgba(#24202d, 0.65),
+                                            rgba(#24202d, 0.65)),
+                                            url(../img/intro1.png);
+        background-repeat: no-repeat;
+        object-fit: fill;
+        background-position: center;
+    }
+    
+    &__header {
+        grid-row: 1/2;
+        grid-column: center-start/center-end;
+        background-color: transparent;
+    }
+
+    &__text {
+        text-align: center;
+        color: $color-white;
+
+        &--heading {
+            padding: 0 15rem 2.5rem;
+            font-size: 3.8rem;
+            line-height: 4rem;
+        }
+
+        &--paragraph {
+            font-size: 1.7rem;
+            padding-bottom: 7rem;
+        }
+        
+    }
+}
+
+.header {
+    padding: 5rem 0 10rem 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    // grid-template-rows: ;
+    width: 100%;
+    grid-column-gap: 10rem;
+    font-size: 1.5rem;
+
+    &__name {
+        color: $color-header;        
+    }
+
+    &__navbar {
+        list-style-type: none;
+        color: $color-white;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 10rem;
+
+        &--list {
+            list-style: none;
+        }
+
+        &--link {
+            text-decoration: none;
+            color: $color-white;
+        }
+    }
+
+
+}

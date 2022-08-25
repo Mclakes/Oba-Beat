@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // /* font-weight: unknown; */
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 62.5%;
+    line-height: 1.7;
+    
+    // padding: 2rem;
+
+    color: $color-black-dark;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 60rem repeat(3, min-content) 70rem min-content 65rem repeat(3, min-content);
+
+    grid-template-columns: [left-border-start] 10rem [left-border-end center-start] repeat(6, [col-start] minmax(14rem, 1fr) [col-end] ) [center-end right-border-start] 10rem [right-border-end] ;
+
+    grid-row-gap: 3rem;
+}
+
+.container-about-us {
+    display: grid;
+
+    grid-template-rows: 10rem min-content max-content min-content min-content min-content 65rem repeat(3, min-content);  
+
+    grid-template-columns: [left-border-start] 10rem [left-border-end center-start] repeat(6, [col-start] minmax(14rem, 1fr) [col-end] ) [center-end right-border-start] 10rem [right-border-end] ;
+
+    // grid-column-gap: 3rem;
+}
+
+.container-properties {
+
+    display: grid;
+
+    grid-template-rows: 55rem repeat(6, min-content);
+
+    grid-template-columns: [left-border-start] 10rem [left-border-end center-start] repeat(6, [col-start] minmax(14rem, 1fr) [col-end] ) [center-end right-border-start] 10rem [right-border-end] ;
+
+    padding: 1rem;
+}
+
+.container-contact-us {
+
+
+    display: grid;
+
+    grid-template-rows: 45rem repeat(6, min-content);
+
+    // grid-template-rows: 10rem min-content min-content;
+    grid-template-columns: [left-border-start] 10rem [left-border-end center-start] repeat(6, [col-start] minmax(14rem, 1fr) [col-end] ) [center-end right-border-start] 10rem [right-border-end] ;
+}
+
+
+
+
+.mg-sm {margin-bottom: 2rem;}
+.mg-md {margin-bottom: 3rem;}
+.mg-bg {margin-bottom: 5rem;}
+.mg-lg {margin-bottom: 8rem;}
+

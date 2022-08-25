@@ -1,0 +1,45 @@
+.about {
+    &__text {
+        grid-row: 2/3;
+        grid-column: center-start/col-end 3;
+        background-color: $color-black-dark;
+    }
+
+    &__heading {
+        color: $color-white;
+        font-size: 2.5rem;
+        border-left: 1rem solid $color-primary;
+        border-right: 1rem solid $color-primary;
+        padding: 0 1.8rem;
+        margin-bottom: 3rem;
+        display: inline-block;
+    }
+
+    &__paragraph {
+        font-size: 1.3rem;
+        width: 90%;
+        text-align: left;
+
+        &--1 {
+            margin-bottom: 5rem;
+        }
+
+        &--2 {
+            margin-bottom: 4rem;
+        }
+    }
+    
+    &__pic {
+        grid-row: 2/3;
+        grid-column: col-start 4/ right-border-end;
+        background-color: transparent;
+        height: 50rem;
+
+        &ture {
+            height: 100%;
+            width: auto;
+        }
+        
+    }
+}
+
