@@ -14,18 +14,16 @@
 
 @import "pages/_about.scss";
 @import "pages/_home.scss";
+@import "pages/_newsletter.scss";
+@import "pages/_service.scss";
 @import "pages/_top.scss";
 
-.newsletter {
-    grid-row: 3/4;
-    grid-column: center-start/center-end;
-    background-color: pink;
-}
 
 .service {
     grid-row: 4/5;
     grid-column: center-start/center-end;
     background-color: red;
+    height: 2rem;
 }
 
 .features {

@@ -24,7 +24,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 60rem repeat(3, min-content) 70rem min-content 65rem repeat(3, min-content);
+    grid-template-rows: 60rem repeat(2, min-content) 10rem 70rem min-content 65rem repeat(3, min-content);
 
     grid-template-columns: [left-border-start] 10rem [left-border-end center-start] repeat(6, [col-start] minmax(14rem, 1fr) [col-end] ) [center-end right-border-start] 10rem [right-border-end] ;
 

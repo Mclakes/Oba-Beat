@@ -16,7 +16,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 60rem repeat(3, min-content) 70rem min-content 65rem repeat(3, min-content);
+  grid-template-rows: 60rem repeat(2, min-content) 10rem 70rem min-content 65rem repeat(3, min-content);
   grid-template-columns: [left-border-start] 10rem [left-border-end center-start] repeat(6, [col-start] minmax(14rem, 1fr) [col-end]) [center-end right-border-start] 10rem [right-border-end];
   grid-row-gap: 3rem; }
 
@@ -106,8 +106,8 @@ body {
 .about__heading {
   color: #ffffff;
   font-size: 2.5rem;
-  border-left: 1rem solid #B53C17;
-  border-right: 1rem solid #B53C17;
+  border-left: 0.9rem solid #B53C17;
+  border-right: 0.9rem solid #B53C17;
   padding: 0 1.8rem;
   margin-bottom: 3rem;
   display: inline-block; }
@@ -129,6 +129,35 @@ body {
   .about__picture {
     height: 100%;
     width: auto; }
+
+.newsletter {
+  grid-row: 3/4;
+  grid-column: center-start/center-end;
+  background-color: #8C2F12;
+  width: 70%;
+  margin: -4rem auto 1rem auto;
+  padding: 3.5rem 3rem;
+  border-radius: 1rem 0 1rem 0;
+  font-size: 2rem;
+  color: #ffffff;
+  display: grid;
+  grid-template-rows: min-content;
+  grid-template-columns: repeat(3, max-content);
+  justify-content: space-between; }
+  .newsletter__paragraph {
+    margin-left: 3rem; }
+  .newsletter__input {
+    width: 45rem;
+    padding-left: 1rem;
+    border-radius: .8rem; }
+  .newsletter__button {
+    color: #ffffff;
+    background-color: #FF774D;
+    padding: 1.5rem 4.7rem;
+    border-radius: .8rem;
+    outline: none;
+    border: 0;
+    transform: translateX(-1rem); }
 
 .top__image {
   grid-row: 1/2;
@@ -176,15 +205,11 @@ body {
       text-decoration: none;
       color: #ffffff; }
 
-.newsletter {
-  grid-row: 3/4;
-  grid-column: center-start/center-end;
-  background-color: pink; }
-
 .service {
   grid-row: 4/5;
   grid-column: center-start/center-end;
-  background-color: red; }
+  background-color: red;
+  height: 2rem; }
 
 .features {
   grid-row: 5/6;
