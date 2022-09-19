@@ -1,17 +1,73 @@
 .feedback {
-    &__topic {
+    &__topic {  
         grid-row: 7/8;
         grid-column: center-start/center-end;
-        background-color: palegreen;
+        // background-color: ;
 
         text-align: center;
-        // margin: 3rem auto;
+        padding: 2rem;
+    }
+
+    &__heading {
+        color: #ff5520;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    &__text {
+        margin-top: -.5rem;
+        color: $color-white;
+        font-size: 1.1rem;
     }
     
     &__section {
         grid-row: 8/9;
         grid-column: center-start/center-end;
-        background-color: paleturquoise;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20rem;
+    }
+
+    &__page {
+        background-color: $color-white;
+        padding: 2rem;
+        border-radius: 2rem;
+        transition: all .4s;
+
+        &:hover {
+            border-bottom: 2px solid $color-primary;
+            transform: scale(1.2);
+        }
+    }
+
+    &__photocard {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+    }
+
+    &__image {
+        width: 4rem;
+        height: auto;
+        border-radius: 2.5rem;
+        margin-right: 2rem;
+    }
+
+    &__contact {
+        font-size: 1.4rem;
+        color: $color-primary;
+    }
+
+    &__title {
+        margin-top: -.5rem;
+        color: #6b788e;
+    }
+    
+
+    &__paragraph {
+        margin: 2rem 0;
+        font-size: 1.1rem;
+        line-height: 1.9rem;
+        color: #7A8699;
     }
 }
 
