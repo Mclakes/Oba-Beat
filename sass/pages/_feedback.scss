@@ -1,0 +1,17 @@
+.feedback {
+    &__topic {
+        grid-row: 7/8;
+        grid-column: center-start/center-end;
+        background-color: palegreen;
+
+        text-align: center;
+        // margin: 3rem auto;
+    }
+    
+    &__section {
+        grid-row: 8/9;
+        grid-column: center-start/center-end;
+        background-color: paleturquoise;
+    }
+}
+

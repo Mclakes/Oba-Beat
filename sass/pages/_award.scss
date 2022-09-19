@@ -1,0 +1,29 @@
+.award {
+    
+    grid-row: 6/7;
+    grid-column: center-start/center-end;
+    background-color: #2c2c2c;
+
+    display: grid;
+    grid-template-columns: repeat(4, min-content);
+    justify-content: space-between;
+    box-sizing: content-box;
+    // border: 0.5rem solid red;
+    justify-items: center;
+
+    margin-top: 8rem;
+    padding: 3rem 4rem;
+    font-size: 1.6rem;
+
+    &__pair {
+        text-align: center;
+        &--value {
+            font-size: 3rem;
+            color: $color-primary;
+        }
+        &--text {
+            color: $color-white;
+            line-height: 2rem;
+        }
+    }
+}

@@ -13,42 +13,29 @@
 @import "layouts/_header.scss";
 
 @import "pages/_about.scss";
+@import "pages/_award.scss";
 @import "pages/_home.scss";
 @import "pages/_newsletter.scss";
-@import "pages/_service.scss";
+@import "pages/_features.scss";
+@import "pages/feedback";
 @import "pages/_top.scss";
 
 
 .service {
     grid-row: 4/5;
     grid-column: center-start/center-end;
-    background-color: red;
-    height: 2rem;
-}
+    background-color: inherit;
 
-.features {
-    grid-row: 5/6;
-    grid-column: center-start/center-end;
-    background-color: orange;
-}
+    text-align: center;
+    color: $color-white;
+    font-size: 2rem;
 
-.award {
-    
-    grid-row: 6/7;
-    grid-column: center-start/center-end;
-    background-color: palegoldenrod;
-}
-
-.feedback__topic {
-    grid-row: 7/8;
-    grid-column: center-start/center-end;
-    background-color: palegreen;
-}
-
-.feedback__section {
-    grid-row: 8/9;
-    grid-column: center-start/center-end;
-    background-color: paleturquoise;
+    & > h2 {
+        display: inline-block;
+        padding: 0 1.8rem;
+        border-left: 0.9rem solid $color-primary;
+        border-right: 0.9rem solid $color-primary;
+    }
 }
 
 .footer {

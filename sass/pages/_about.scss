@@ -2,7 +2,9 @@
     &__text {
         grid-row: 2/3;
         grid-column: center-start/col-end 3;
-        background-color: $color-black-dark;
+        // background-color: $color-black-dark;
+        background-color: inherit;
+        color: $color-white;
     }
 
     &__heading {
